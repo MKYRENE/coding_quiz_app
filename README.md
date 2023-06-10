@@ -23,9 +23,7 @@ A timed coding quiz with multiple-choice questions to test your knowledge of Jav
 2. Navigate to the project directory: `cd coding_quiz_app`
 3. Open the index.html file in your preferred web browser
 
-##Local Site 
-![website screenshot](/Assets/Screenshot%202023-06-09%20at%2011.59.25%20PM.png)
-
+## Local Site Deployment
 
 Site URL:https://mkyrene.github.io/coding_quiz_app/
 
@@ -39,9 +37,7 @@ Site URL:https://mkyrene.github.io/coding_quiz_app/
 
 ## Screenshots
 
-![Start Screen](screenshots/start-screen.png)
-![Quiz Screen](screenshots/quiz-screen.png)
-![Game Over Screen](screenshots/game-over-screen.png)
+![website screenshot](/Assets/Screenshot%202023-06-09%20at%2011.59.25%20PM.png)
 
 ## Contributing
 N/A
