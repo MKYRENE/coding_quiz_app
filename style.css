@@ -6,7 +6,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: gray;
-    text-decoration-color: white;
   }
   /* HEADER STYLING */
   header {
@@ -14,6 +13,10 @@ body {
     color: #fff;
     padding: 20px;
     text-align: center;
+  }
+  /* H2 STYLING  */
+  h2 {
+    color: white;
   }
   /* MAIN STYLING */
   main {
@@ -24,7 +27,7 @@ body {
     display: none;
     /* FOOTER CLASS */
   }
-/* CLASS BUTTON HOVER */
+/* CLASS START HOVER */
   .start:hover{
     background-color:red;
   }
