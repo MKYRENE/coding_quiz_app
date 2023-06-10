@@ -20,7 +20,7 @@ A timed coding quiz with multiple-choice questions to test your knowledge of Jav
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/MKYRENE/coding_quiz_app.git`
-2. Navigate to the project directory: `cd coding-quiz`
+2. Navigate to the project directory: `cd coding_quiz_app`
 3. Open the index.html file in your preferred web browser
 
 ##Local Site 
