@@ -1,4 +1,4 @@
-// Variable Array of Questions and Multiple Choice
+// VARIABLE ARRAY OF QUESTIONS AND MULTIPLE CHOICE
 var questions = [
   {
     question:
@@ -45,8 +45,9 @@ var questions = [
   },
 ];
 
-// Variable references to HTML elements using querySelector
+//VARIABLE REFERENCE TO HTML ELEMENT USING QUERYSELECTOR
 var startButton = document.querySelector(".start");
+var title = document.querySelector(".title");
 var questionText = document.querySelector("#question-text");
 var choicesList = document.querySelector("#choices-list");
 var feedback = document.querySelector("#feedback");
@@ -62,23 +63,25 @@ var score = 0;
 var timeLeft = 60;
 var timerId;
 
-// Function to start the quiz
+// FUNCTION TO START THE QUIZ 
 function startQuiz() {
   document.querySelector("#start-screen").classList.add("hide");
   quizScreen.classList.remove("hide");
   timerId = setInterval(updateTime, 1000);
+   // ADD EXPLOSION CLASS TO TRIGGER ANIMATION ON SITE 
+   title.classList.add("explosion");
   showQuestion();
 }
 
-// Show question function to display a question and its choices
+//SHOW QUESTIONS FUNCTION TO DISPLAY A QUESTION & CHOIRCES 
 function showQuestion() {
   var question = questions[currentQuestionIndex];
-  questionText.textContent = question.question; // Display the question text
+  questionText.textContent = question.question; // DISPLAY QUESTION TEXT
 
-  // Clear the choices list
+  // CLEAR CHOICES LIST 
   choicesList.innerHTML = "";
 
-  // Loop through choices and create buttons
+  //FOR LOOP THROUGH CHOICES AND CREATE BUTTON 
   for (var i = 0; i < question.choices.length; i++) {
     var choice = question.choices[i];
     var choiceButton = document.createElement("button");
@@ -88,17 +91,17 @@ function showQuestion() {
   }
 }
 
-// Event handler function for choice button click
+// EVENT HANDLER FUNCTION FOR BUTTON CHOICE BUTTON CLICK
 function handleChoiceClick(event) {
   var selectedChoice = event.target.textContent;
   var question = questions[currentQuestionIndex];
 
   if (selectedChoice === question.answer) {
     feedback.textContent = "Correct!";
-    score += 10; // Increase the score by 10 for a correct answer
+    score += 10; // INCREASE SCORE BY +10
   } else {
     feedback.textContent = "Wrong!";
-    timeLeft -= 10; // Penalty of 10 seconds for a wrong answer
+    timeLeft -= 10; // DECREASE SCORE BY -10
   }
 
   currentQuestionIndex++;
@@ -109,7 +112,7 @@ function handleChoiceClick(event) {
   }
 }
 
-// Function to end the quiz
+// END QUIZ FUNCTION
 function endQuiz() {
   clearInterval(timerId);
   quizScreen.classList.add("hide");
@@ -117,7 +120,7 @@ function endQuiz() {
   finalScore.textContent = score;
 }
 
-// Function to update the time remaining
+// UPDATE TIME FUNCTION
 function updateTime() {
   timeLeft--;
   if (timeLeft <= 0) {
@@ -125,5 +128,5 @@ function updateTime() {
   }
 }
 
-// Add event listener to the "Start Quiz" button
+// ADDED EVENT LISTENER FOR CLICK & START THE QUIZ
 startButton.addEventListener("click", startQuiz);

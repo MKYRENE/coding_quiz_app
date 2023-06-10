@@ -2,46 +2,50 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <title>Code Quiz App</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Code Quiz App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-  <header>
-    <h1>Coding Quiz App</h1>
-  </header>
+    <header>
+        <h1 class="title">Coding Quiz App</h1>
+    </header>
 
-  <!-- Start screen -->
-  <div id="start-screen" class="start-screen">
-    <h2>Welcome to the Quiz!</h2>
-    <button id="start-btn" class="start">Start Quiz</button>
-  </div>
+    <!-- Start screen -->
+    <div id="start-screen" class="start-screen">
+        <h2>Welcome to the Quiz!</h2>
+        <button id="start-btn" class="start">Start Quiz</button>
+    </div>
 
-  <!-- Quiz screen -->
-  <div id="quiz-screen" class="hide">
-    <h2 id="question-text"></h2>
-    <ul id="choices-list"></ul>
-    <p id="feedback"></p>
-    <button id="next-btn" class="hide">Next</button>
-  </div>
+    <!-- Quiz screen -->
+    <div id="quiz-screen" class="hide">
+        <h2 id="question-text"></h2>
+        <ul id="choices-list"></ul>
+        <p id="feedback"></p>
+        <button id="next-btn" class="hide">Next</button>
+    </div>
 
-  <!-- Game over screen -->
-  <div id="game-over-screen" class="hide">
-    <h2>Quiz Complete!</h2>
-    <p>Your final score is: <span id="final-score"></span></p>
-    <form id="initials-form">
-      <label for="initials">Enter your initials:</label>
-      <input type="text" id="initials" maxlength="3" required>
-      <button type="submit">Submit</button>
-    </form>
-  </div>
+    <!-- Game over screen -->
+    <div id="game-over-screen" class="hide">
+        <h2>Quiz Complete!</h2>
+        <p>Your final score is: <span id="final-score"></span></p>
+        <form id="initials-form">
+            <label for="initials">Enter your initials:</label>
+            <input type="text" id="initials" maxlength="3" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 
-  <footer class="footer">
-    <p>&copy; 2023 Quiz App. All rights reserved.</p>
-  </footer>
+    <footer class="footer">
+        <p>&copy; 2023 Quiz Coding App. By Michael Rodriguez All rights reserved.</p>
+    </footer>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

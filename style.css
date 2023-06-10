@@ -1,44 +1,75 @@
-/* CSS styles */
+/* ADD ANIMATION CLASS */
+@keyframes colorExplosion {
+    from {
+        background-color: orange;
+    }
+
+    to {
+        background-color: purple;
+    }
+}
+
+/* ADD ANIMATION CLASS */
+.explosion {
+    animation: colorExplosion 2s infinite alternate;
+}
+
+/* BODY STYLING */
+.title.explosion {
+    animation: colorExplosion 2s infinite alternate;
+}
+.title:hover {
+    color: blue;
+}
 
 /* BODY STYLING */
 body {
-    font-family: Arial, sans-serif;
+
     margin: 0;
     padding: 0;
-    background-color: gray;
-  }
-  /* HEADER STYLING */
-  header {
-    background-color: #333;
-    color: #fff;
+    background-color:beige;
+}
+
+/* HEADER STYLING */
+header {
+    font-family: 'Kablammo', cursive;
+    background-color:orange;
+    color: black;
     padding: 20px;
     text-align: center;
-  }
-  section {
+}
+
+section {
     text-align: center;
-  }
-  /* H2 STYLING  */
-  h2 {
-    color: white;
+}
+
+/* H2 STYLING  */
+h2 {
+    color: rgb(15, 2, 2);
     text-align: center;
-  }
-  /* MAIN STYLING */
-  main {
+}
+
+/* MAIN STYLING */
+main {
     padding: 20px;
-  }
-  div {
+}
+
+div {
     text-align: center;
-  }
-  /* SECTION CLASS STYLING  */
-  .hide {
+}
+
+/* SECTION CLASS STYLING  */
+.hide {
     display: none;
     /* FOOTER CLASS */
-  }
+}
+
 /* CLASS START HOVER */
-  .start:hover{
-    background-color:red;
-  }
-  .footer {
+.start:hover {
+    background-color: red;
+}
+
+.footer {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -46,6 +77,6 @@ body {
     font-size: 10px;
     font-weight: bold;
     background-color: #f5f5f5;
+    color: black;
     text-align: center;
-  }
-  
+}
