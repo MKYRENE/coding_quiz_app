@@ -38,7 +38,9 @@ Site URL:https://mkyrene.github.io/coding_quiz_app/
 ## Screenshots
 
 ![website screenshot](/Assets/Screenshot%202023-06-09%20at%2011.59.25%20PM.png)
-
+![website screenshot](/Assets/Screenshot%202023-06-10%20at%201.48.02%20AM.png)
+![website screenshot](/Assets/Screenshot%202023-06-10%20at%201.48.30%20AM.png)
+![website screenshot](/Assets/Screenshot%202023-06-10%20at%201.49.45%20AM.png)
 ## Contributing
 N/A
 
