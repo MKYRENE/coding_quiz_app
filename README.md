@@ -24,7 +24,10 @@ A timed coding quiz with multiple-choice questions to test your knowledge of Jav
 3. Open the index.html file in your preferred web browser
 
 ##Local Site 
-Site URL:
+![website screenshot](/Assets/Screenshot%202023-06-09%20at%2011.59.25%20PM.png)
+
+
+Site URL:https://mkyrene.github.io/coding_quiz_app/
 
 ## Usage
 

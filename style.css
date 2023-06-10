@@ -14,6 +14,9 @@ body {
     padding: 20px;
     text-align: center;
   }
+  section {
+    text-align: center;
+  }
   /* H2 STYLING  */
   h2 {
     color: white;
