@@ -20,10 +20,14 @@ body {
   /* H2 STYLING  */
   h2 {
     color: white;
+    text-align: center;
   }
   /* MAIN STYLING */
   main {
     padding: 20px;
+  }
+  div {
+    text-align: center;
   }
   /* SECTION CLASS STYLING  */
   .hide {
